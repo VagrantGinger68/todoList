@@ -9,8 +9,11 @@ import {
   View,
 } from "react-native";
 import Task from "./components/Tasks";
+import { useState } from "react";
 
 export default function App() {
+  const [task, setTask] = useState();
+
   return (
     <View style={styles.container}>
       {/* Today's Tasks */}
